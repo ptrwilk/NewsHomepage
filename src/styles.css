@@ -4,3 +4,10 @@
     align-items: center;
     height: 100vh;
 }
+
+
+@media (min-width : 1124px) {
+    .app{
+        align-items: flex-start;
+    }
+}

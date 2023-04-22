@@ -1,0 +1,263 @@
+@import url('../colors.css');
+
+.container {
+    max-width: 1220px;
+    margin-top: auto;
+    padding: 0 1rem;
+    padding-bottom: 5rem;
+    font-size: 10px;
+}
+
+.drawer-container{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    padding: 1.5rem;
+}
+
+.drawer-container .btn-menu-close{
+    align-self: flex-end;
+    min-width: unset;
+    padding: 0;
+    margin-bottom: 7rem;
+    color: var(--darkgrayishblue);
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.menu .item{
+    cursor: pointer;
+    color: var(--verydarkblue);
+}
+
+.menu .item:hover{
+    color: var(--softorange);
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+.heading .img-logo{
+    align-self: center;
+}
+
+.heading .btn-menu{
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    color: var(--verydarkblue);
+}
+
+.heading .btn-menu img{
+    width: 100%;
+}
+
+.article{
+    display: flex;
+    flex-direction: column;
+}
+
+.article .img-web{
+    width: 100%;
+}
+
+.article .title{
+    margin-top: 2rem;
+    font-size: 4em;
+    font-weight: 800;
+    color: var(--verydarkblue);
+}
+
+.article .content{
+    margin-top: 1rem;
+}
+
+.article .content .text{
+    font-size: 1.4em;
+    color: var(--darkgrayishblue);
+}
+
+.article .content .btn{
+    margin-top: 2rem;
+    padding: 1rem 2.3rem;
+    border-radius: 0;
+    font-size: 1.2em;
+    font-weight: 600;
+    letter-spacing: 5px;
+    color: var(--white);
+    background: var(--softred);
+}
+
+.article .content .btn:hover{
+    background: var(--verydarkblue);
+}
+
+.new{
+    margin-top: 4rem;
+    padding: 1.5rem;
+    background: var(--verydarkblue);
+}
+
+.new .title{
+    font-size: 3.5em;
+    font-weight: 700;
+    color: var(--softorange);
+}
+
+.new .new-contents{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+}
+
+.new .new-contents hr{
+    height: 1px;
+    margin: 2rem 0;
+    background: var(--darkgrayishblue);
+}
+
+.new .new-contents .new-content .title{
+    font-size: 2em;
+    cursor: pointer;
+    color: var(--white);
+}
+
+.new .new-contents .new-content .title:hover{
+    color: var(--softorange);
+}
+
+.new .new-contents .new-content .text{
+    margin-top: .7rem;
+    color: var(--grayishblue);
+}
+
+.facts {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.fact{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.fact .img{
+    width: 100px;
+}
+
+.fact .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.fact .number{
+    font-size: 3em;
+    font-weight: 800;
+    color: var(--grayishblue);
+}
+
+.fact .title{
+    font-size: 1.7em;
+    font-weight: 700;
+    cursor: pointer;
+    color: var(--verydarkblue);
+}
+
+.fact .title:hover{
+    color: var(--softred);
+}
+
+.fact .text{
+    font-size: 1.3em;
+    color: var(--darkgrayishblue);
+}
+
+@media (min-width : 600px) {
+    .container{
+        font-size: 11px;
+    }
+
+    .heading{
+        align-items: center;
+    }
+
+    .menu{
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .menu .item{
+        font-size: 1.6em;
+        color: var(--darkgrayishblue);
+    }
+    
+    .article{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }  
+
+    .article .img-web{
+        grid-column: 1 / span 2;
+    }
+
+    .article .title{
+        margin-top: 0;
+    }
+
+    .article .content{
+        margin-top: 0;
+    }
+
+    .facts{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width : 1124px) {
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 0 1.5rem;
+        margin-top: unset;
+        font-size: 12px;
+    }
+
+    .heading{
+        grid-column: 1 / span 3;
+    }
+
+    .article{
+        grid-column: 1 / span 2;
+        gap: 0 1.5rem;
+    }
+
+    .article .title{
+        margin-top: 1.5rem;
+    }
+
+    .article .content{
+        margin-top: 1.5rem;
+    }
+
+    .new {
+        margin-top: 0;
+    }
+
+    .facts{
+        grid-column: 1 / span 3;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1.5rem;
+    }
+}

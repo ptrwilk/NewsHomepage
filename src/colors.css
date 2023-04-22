@@ -1,9 +1,8 @@
 :root{
-    --purple: hsl(259, 100%, 65%);
-    --lightred: hsl(0, 100%, 67%);
-    --white: hsl(0, 0%, 100%);
-    --offwhite: hsl(0, 0%, 94%);
-    --lightgrey: hsl(0, 0%, 86%);
-    --smokeygrey: hsl(0, 1%, 44%);
-    --offblack: hsl(0, 0%, 8%);
+    --softorange: hsl(35, 77%, 62%);
+    --softred: hsl(5, 85%, 63%);
+    --white: hsl(36, 100%, 99%);
+    --grayishblue: hsl(233, 8%, 79%);
+    --darkgrayishblue: hsl(236, 13%, 42%);
+    --verydarkblue: hsl(240, 100%, 5%);
 }
